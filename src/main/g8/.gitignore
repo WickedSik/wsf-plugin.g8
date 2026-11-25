@@ -1,0 +1,25 @@
+# sbt / build output
+target/
+
+# Metals / Bloop / BSP
+.metals/
+.bloop/
+.bsp/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Staged plugin JARs (build artifacts)
+plugins/
+
+# Local AI agent files
+*.local.*
+.claude/tasks/
+
+# Environment
+.env
+
+# OS
+.DS_Store

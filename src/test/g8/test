@@ -1,0 +1,10 @@
+> test
+> package
+# Only the plugin's own classes may be in the JAR
+$ exec unzip -q target/scala-3.9.0/wsf-plugin-example_3-0.1.0-SNAPSHOT.jar -d unpacked
+$ exists unpacked/io/github/wickedsik/wsforge/example/ExamplePlugin.class
+$ absent unpacked/zio
+$ absent unpacked/scala
+$ absent unpacked/io/circe
+$ absent unpacked/io/github/wickedsik/wsforge/api
+$ absent unpacked/io/github/wickedsik/wsforge/tools
